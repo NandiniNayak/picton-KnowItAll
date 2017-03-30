@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :year_groups
+  resources :time_tables
+  resources :year_groups
   devise_for :users
   root 'home#page'
 

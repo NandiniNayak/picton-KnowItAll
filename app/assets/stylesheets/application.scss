@@ -16,7 +16,19 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+body{
+    background-color: pink ;
+}
+
 .navbar-default {
-    background-color: pink;
+    background-color: blue;
     border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
 }

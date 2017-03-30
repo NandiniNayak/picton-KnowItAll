@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Time Tables</h1>
+
+<table class = "table">
+  <thead>
+    <tr>
+      <th>Week</th>
+      <th>Day</th>
+      <th>Date</th>
+      <th>Start time</th>
+      <th>End time</th>
+      <th>Period</th>
+      <th>Teacher</th>
+      <th>Room number</th>
+      <th>Subject</th>
+      <th>Year group</th>
+      <th>Student name</th>
+      <th>Equipment</th>
+      <th>Assignment due</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @time_tables.each do |time_table| %>
+      <tr>
+        <td><%= time_table.week %></td>
+        <td><%= time_table.day %></td>
+        <td><%= time_table.date %></td>
+        <td><%= time_table.start_time %></td>
+        <td><%= time_table.end_time %></td>
+        <td><%= time_table.period %></td>
+        <td><%= time_table.teacher %></td>
+        <td><%= time_table.room_number %></td>
+        <td><%= time_table.subject %></td>
+        <td><%= time_table.year_group %></td>
+        <td><%= time_table.student_name %></td>
+        <td><%= time_table.equipment %></td>
+        <td><%= time_table.assignment_due %></td>
+        <td><%= time_table.user %></td>
+        <td><%= link_to 'Show', time_table %></td>
+        <td><%= link_to 'Edit', edit_time_table_path(time_table) %></td>
+        <td><%= link_to 'Destroy', time_table, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Time table', new_time_table_path %>

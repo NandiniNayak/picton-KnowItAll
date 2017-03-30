@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  week: MyString
+  day: MyString
+  date: 2017-03-17
+  start_time: 2017-03-17 00:09:29
+  end_time: 2017-03-17 00:09:29
+  period: 1
+  teacher: MyString
+  room_number: MyString
+  subject: MyString
+  year_group: MyString
+  student_name: MyString
+  equipment: MyString
+  assignment_due: MyString
+  user_id: 
+
+two:
+  week: MyString
+  day: MyString
+  date: 2017-03-17
+  start_time: 2017-03-17 00:09:29
+  end_time: 2017-03-17 00:09:29
+  period: 1
+  teacher: MyString
+  room_number: MyString
+  subject: MyString
+  year_group: MyString
+  student_name: MyString
+  equipment: MyString
+  assignment_due: MyString
+  user_id: 

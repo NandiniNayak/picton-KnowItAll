@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Week:</strong>
+  <%= @time_table.week %>
+</p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @time_table.day %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @time_table.date %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @time_table.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @time_table.end_time %>
+</p>
+
+<p>
+  <strong>Period:</strong>
+  <%= @time_table.period %>
+</p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @time_table.teacher %>
+</p>
+
+<p>
+  <strong>Room number:</strong>
+  <%= @time_table.room_number %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @time_table.subject %>
+</p>
+
+<p>
+  <strong>Year group:</strong>
+  <%= @time_table.year_group %>
+</p>
+
+<p>
+  <strong>Student name:</strong>
+  <%= @time_table.student_name %>
+</p>
+
+<p>
+  <strong>Equipment:</strong>
+  <%= @time_table.equipment %>
+</p>
+
+<p>
+  <strong>Assignment due:</strong>
+  <%= @time_table.assignment_due %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @time_table.user %>
+</p>
+
+<%= link_to 'Edit', edit_time_table_path(@time_table) %> |
+<%= link_to 'Back', time_tables_path %>

@@ -1,0 +1,2 @@
+json.extract! time_table, :id, :week, :day, :date, :start_time, :end_time, :period, :teacher, :room_number, :subject, :year_group, :student_name, :equipment, :assignment_due, :user_id, :created_at, :updated_at
+json.url time_table_url(time_table, format: :json)

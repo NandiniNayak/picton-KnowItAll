@@ -11,7 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170310022537) do
+ActiveRecord::Schema.define(version: 20170317000929) do
+
+  create_table "time_tables", force: :cascade do |t|
+    t.string   "week"
+    t.string   "day"
+    t.date     "date"
+    t.time     "start_time"
+    t.time     "end_time"
+    t.integer  "period"
+    t.string   "teacher"
+    t.string   "room_number"
+    t.string   "subject"
+    t.string   "year_group"
+    t.string   "student_name"
+    t.string   "equipment"
+    t.string   "assignment_due"
+    t.integer  "user_id"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  add_index "time_tables", ["user_id"], name: "index_time_tables_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -30,5 +51,14 @@ ActiveRecord::Schema.define(version: 20170310022537) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+
+  create_table "year_groups", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "year_groups", ["user_id"], name: "index_year_groups_on_user_id"
 
 end

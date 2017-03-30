@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Year Groups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @year_groups.each do |year_group| %>
+      <tr>
+        <td><%= year_group.name %></td>
+        <td><%= year_group.user %></td>
+        <td><%= link_to 'Show', year_group %></td>
+        <td><%= link_to 'Edit', edit_year_group_path(year_group) %></td>
+        <td><%= link_to 'Destroy', year_group, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Year group', new_year_group_path %>
